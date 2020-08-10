@@ -1,0 +1,13 @@
+n = int(input("Enter a limit to find fibonacci series : "))
+n1 = 0
+n2 = 1
+i = 0
+while (i < n):
+    if(i <= 1):
+        next = i
+    else:
+        next = n1 + n2
+        n1 = n2
+        n2 = next
+    print(next)
+    i = i+1
